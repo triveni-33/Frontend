@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* .type1 {
+            color: blue;
+            background:lightsalmon;
+        }
+        .type2{
+            color:green;
+        }
+
+        #el{
+            color:red;
+        }
+        div{
+            color:orange;
+        }
+
+        *{
+            color:aqua;
+        } */
+
+        /* div {
+            background: lightgreen;
+            width: 200px;
+            height: 300px;
+            padding: 10px 20px;
+            border: 4px groove red; 
+            border-radius: 50px;
+            margin: 20px;
+        } */
+         div{
+            background:lightpink;
+            width:200px;
+            height:300px;
+            padding:20px;
+            margin:20px;
+
+         }
+         span{
+            background:lightpink;
+            width: 100px;
+            height:100px;
+            display:inline-block;
+            /* padding:50px; */
+            margin:50px;
+         }
+
+         section{
+            height:700px;
+            width:900px;
+            background-image:url('https://static.vecteezy.com/system/resources/thumbnails/001/849/553/small/modern-gold-background-free-vector.jpg');
+            background-color:lightpink; 
+            background-repeat:no-repeat;
+            background-size:100% 100%;    
+            
+         }
+/* 
+what is css
+how to insert css
+types of selectors
+boxmodel
+display: inline-block
+background
+
+
+*/
+    </style>
+</head>
+
+<body>
+    <!-- 
+    
+    
+    css -cascading style sheets
+    css is style sheet language that is used to describe the
+    presentaion of a webpage
+    css deals with colors ,backgrounds,animation ,texts and layouts
+
+
+    how we can insert css
+    1) inline css- css is applied to the element using style attribute
+    <h1 style='color:red;background:blue'>content</h1>
+
+    2) internal css- css is applied to the document using style tag
+    <style>
+        css syntax
+        declaration
+        selector{property:value;
+        property1:value2;}
+
+        selector
+        it is used to point out the html elements for applying styles
+
+
+      
+       div{ color:red;
+        background:yellow;}
+    </style>
+
+
+    3) external style sheet- it is used to apply styles for multple 
+    documents by linking using link tag and the style document should
+    contain .css extension with necessary styles
+
+<h1 style='color:red;background:blue'>inline</h1>
+    <div>internal</div>
+    <p>external</p>
+
+    specificity
+    1st inline 
+    2nd internal
+    3rd external
+
+
+    types of selectors
+    1) simple selector
+       1) tagname selector
+       h1{
+       color:red;
+       }
+
+       2) class selector
+       class selector is used to appply style for multiple eleemnts at a time
+       class is denoted with .name
+
+        .type1 {
+            color: blue;
+        }
+        .type2{
+            color:green;
+        }
+    <h1 class="type1">heading</h1>
+    <div class="type1">heading</div>
+    <p class="type1">heading</p>
+    <h1 class="type2">heading</h1>
+    <h1 class="type2">heading</h1>
+    <h1 class="type2">heading</h1>
+
+    3) id selector 
+    it is used to apply styles uniquely
+    id is must unique
+    id is denoted by #name
+    <h1 class="type2" id='el'>heading</h1>
+
+    4) universal selector
+    it is used to apply style to the every element 
+    *{
+    color:yellow;
+    }
+
+    specificity
+
+    id having high priority
+    class is having high than tagname
+    tagname
+
+
+    2) combinators
+    3) pseudo class
+
+    boxmodel
+    every element contains four components to describe the presentaion of 
+    an element
+
+    1) content
+       width:
+       height:
+
+    2) padding 
+    it is space around the content
+
+    //all sides
+    padding:20px;
+    //      top  right bottom left
+    padding:10px 20px 30px 40px;
+    //      top  left/right  bottom
+    padding:10px 20px 30px;
+    //     top/botom  left/right
+    padding:10px      20px;
+
+
+    3) border
+    border:width style color;
+    border :1px solid red;
+
+    styles
+    solid
+    double
+    dotted
+    dashed
+    ridge
+    groove
+    none
+
+    border-radius:20px;
+
+    4) margin
+    it is the space around an element
+    
+  //all sides
+    margin:20px;
+    //      top  right bottom left
+    margin:10px 20px 30px 40px;
+    //      top  left/right  bottom
+    margin:10px 20px 30px;
+    //     top/botom  left/right
+    margin:10px      20px;
+
+    
+
+    elements are divided based on a behaviour
+    1) block level elements
+    all properties will be applied
+    2) inline level elements
+    width,height ,margin top and botom
+
+    3)inline-block
+    it will behave like inline but takes properties like
+    block level
+
+
+    background properties
+    background-color:red;
+    background-image:url('img.png')
+    background-image:url('https//image.kfdif.ko')
+
+    
+    
+    -->
+
+    <section>
+        home page
+    </section>
+
+    <!-- block level -which occupies complte space  and always starts one new line -->
+    <h1>content1</h1><h1>content2</h1>
+
+    <!-- inline level -which takes necessary space -->
+    <a href="">link1</a>
+    <a href="">link2</a>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, repellat laboriosam voluptatem possimus molestias expedita perferendis quasi totam nemo sint, quam, provident quaerat enim! Illo dolore voluptatibus quia pariatur aliquam.
+    </div>
+
+    <p>Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Repellat impedit iusto animi laboriosam assumenda mollitia magnam quod, minus, ipsam molestiae non. Harum culpa reprehenderit laudantium nobis accusantium quos, placeat nesciunt!</p>
+</body>
+
+</html>

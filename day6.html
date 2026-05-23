@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        units
+        absolute units
+        px cm mm inch
+
+        relative units
+        %- it always depends on parent ---width padding margin
+        vw and vh (viewport height and viewport width) -- it depends on viewport---height
+        rem - 1rem 1*16px ---fontsize
+
+
+      
+        body{
+            height:900px;
+        }
+        .container{
+            background:blue;
+         width:40vw;
+/* height:200vh; */
+            /* width:50%;
+            height:50%; */
+        
+        /* p{
+            width:50vw;
+            background:yellow;
+        }
+
+
+          flex
+          flex is a one dimensional layout model that is used to create
+          different layouts
+
+          1) flex-container or flex parent properties
+            a) it will create flex box - it will change direction to the row
+            display:flex;
+
+            b) it is used to change the direction of a child items
+            flex-direction:column;
+            flex-direction:column-reverse;
+            flex-direction:row;
+            flex-direction:row-reverse;
+
+            c) it controls the child items on x axis 
+        justify-content:center;
+            justify-content:flex-end;
+            justify-content:flex-start;
+            justify-content:space-evenly;
+            justify-content:space-around;
+            justify-content:space-between;
+
+            d) controls the child on y axis
+            align-items:stretch;
+            align-items:center;
+            align-items:flex-start;
+            align-items:flex-end;
+
+            e) it will the move items to the next row 
+            flex-wrap:wrap;
+            flex-wrap:wrap-reverse;
+
+            f) it controls the chils on cross axis 
+            when there is a more than one row
+            align-content:center;
+            align-content:flex-start;
+            align-content:flex-end;
+            align-content:space-between;
+            align-content:space-around;
+            align-content:space-evenly;
+
+            g_) gap 
+            creates the space betweeen rows and cols
+
+            flex-flow: row wrap;
+            flex-flow: direction wrap;
+
+
+
+          2) flex-items or child properties
+
+          flex-basis
+        it specifies the intial width of an flex item
+
+          */
+        
+          .flexcontainer{
+            display:flex;
+            justify-content:space-between;
+
+            height:100vh;
+            /* 
+            align-items:flex-end;
+            align-items:flex-start; */
+align-items:center;
+
+            /* flex-wrap:wrap; */
+            /* align-content:center;
+            align-content:flex-start;
+            align-content:flex-end;
+            align-content:space-between;
+            align-content:space-around;
+            align-content:space-evenly; */
+            gap:20px;
+            
+           
+
+          }
+          .child{
+            background:lightseagreen;
+            padding:10px;
+            flex-basis:50%;
+           
+            /* width:20%; */
+          }
+        
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="child">content1</div>
+        <div class="child">content2</div>
+        <!-- <div class="child">content2</div>
+        <div class="child">content2</div>
+        <div class="child">content2</div>
+        <div class="child">content2</div>
+        <div class="child">content2</div>
+        <div class="child">content2</div> -->
+        <!-- <div class="child">content3</div>
+        <div class="child">content4</div> -->
+    </div>
+
+   
+    
+    
+</body>
+</html>

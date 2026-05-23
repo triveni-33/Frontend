@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    forms
+    div and span
+    semantic 
+
+   form are used to collect information from the user and allowing to submit to the server
+   login pages,register page, signup , contact form
+
+   form -it is used to define a structure for form fields
+
+   input
+   it is used to create a form field
+
+   label
+   to provide extra information about a field
+
+   attributes
+   type----it controls the form field
+   placeholder---it gives the hint to the user
+   for and id --to form the relation between lable and input
+   name---it carries data to the server and also it provides the key
+
+   value--it is used to pass a pre defined value
+
+   
+
+
+    
+    -->
+   <form action="" method="post">
+    <label for="user">Full Name</label> <br>
+    <input type="text" id="user" placeholder="Enter Your Full Name"  name="username" > 
+    <br>
+    <br>
+
+    <label for="u">Email address</label> <br>
+    <input type="email" id="u" placeholder="Enter Your Email" >
+    <br>
+
+    
+    <label for="">Password</label> <br>
+    <input type="password" placeholder="Create a password">
+    <br>
+
+    <label for="">Confirm Password</label> <br>
+    <input type="password" placeholder="Confirm your password">
+    <br>
+
+    <label for="">Gender</label><br>
+    <input type="radio" name="gender" value="male" id="m">
+    <label for="m">Male</label>
+    <input type="radio" name="gender" value="female" id="fm">
+    <label for="fm">female</label>
+    <input type="radio" name="gender" value="other" id="o">
+    <label for="o">other</label>
+
+    <br>
+    <label for="">Date of Birth</label> <br>
+    <input type="date">
+
+    <br>
+    <label for="">Country</label><br>
+    <select name="country" id="">
+        <option value="india">india</option>
+        <option value="uk">uk</option>
+        <option value="usa">usa</option>
+        <option value="aust">australia</option>
+    </select>
+
+
+    <label for="">choose your skills</label> <br>
+    <input type="checkbox" value="html" name="skill">
+    <label for="">html</label>
+    <input type="checkbox" value="css" name="skill">
+    <label for="">css</label>
+    <input type="checkbox" value="js" name="skill">
+    <label for="">js</label>
+
+    <br>
+
+    <label for="">please write your feedback</label> <br>
+    <textarea name="" id="" cols="30" rows="10" placeholder="enter your feedback"></textarea>
+    <br>
+        <input type="checkbox" required>
+    <label for="">I agree to the terms of services and privacy policy</label>
+    <br>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+</form>
+<!-- <input type="file" name="" id="">
+<input type="color" name="" id="">
+<input type="number" name="" id="">
+<input type="range" name="" id="">
+<input type="search" name="" id="">
+
+
+
+div- block level element
+     it is used to group a element for applying styles
+<div>
+    <h1>home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore voluptas in sapiente praesentium ratione nihil vitae recusandae ducimus blanditiis. Mollitia, in quo! Vero ipsa reiciendis quasi nulla nobis dolor.</p>
+</div>
+
+<div>
+    <h1>about</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore voluptas in sapiente praesentium ratione nihil vitae recusandae ducimus blanditiis. Mollitia, in quo! Vero ipsa reiciendis quasi nulla nobis dolor.</p>
+</div>
+
+
+span- inline element
+it is used to group a text for applying styles
+<p>Lorem ipsum,<span> dolor sit amet</span> consectetur adipisicing elit. Saepe quo maxime aliquam voluptatibus quaerat at nemo nisi consequuntur quisquam odit, dolorum ducimus dolorem. Aliquid dolore animi quas. A, blanditiis facilis.</p>
+
+
+-->
+
+<div>content</div>
+<div>content</div>
+<div>content</div>
+<div>content</div>
+<div>content</div>
+<div>content</div>
+
+<!--semantic -which conveys meaning to the developer and browser -->
+<header>content</header>
+<nav>conten
+
+    
+</nav>
+<section>content</section>
+<article>content</article>
+<aside>content</aside>
+<footer>content</footer>
+
+</body>
+</html>

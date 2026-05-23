@@ -1,0 +1,75 @@
+webdevelopment- developing a website or web application
+
+website-collection of a webpages
+
+webpage- it a document that can read by the browser to display information
+
+
+fullstack 
+frontend+ backend +database
+
+
+frontend
+html css- static page 
+javascript- dynamic page
+react 
+
+
+html- hypertext markup language
+
+hypertext
+markup - set of rules that defines how content should be displayed on the browser
+
+
+it is standard markup language that is used to create structure for a webpage
+it acts as a skeleton
+it contains series of elements that are represented by tags
+version -html5
+inventor - tim berners lee
+
+tag
+<reserveredword>
+
+open tag  + content + closing tag ====> element
+<h1>this is heading content</h1>
+<h1>this is heading content</h1>
+<h1>this is heading content</h1>
+
+
+vs code 
+how to open project
+1)throught vs code
+open vs code----> click on file---> open folder--->create or selct a folder-->
+click on + icon create a folder---> day1--->right click on day1--->create a new file index.html
+
+2) through file manager
+
+go to file manager
+select folder---
+enter cmd at the top
+enter code .
+
+
+
+basic structure of html
+doctype---it will tell the type of document and version of the html
+html ---root element
+head---title , external links and meta 
+body-- content of the page
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>my day 1</title>
+</head>
+<body>
+<h1>content</h1>
+</body>
+</html>
+
+
+
+
+
+
+
