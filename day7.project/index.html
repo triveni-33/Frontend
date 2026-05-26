@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        header{
+            background:rgba(17, 15, 15, 0.866);
+            color:white;
+            padding:20px 40px;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+        header>ul{
+            display:flex;
+            gap:20px;
+            list-style-type: none;
+        }
+
+        .s1{
+            background:rgba(17, 15, 15, 0.866);
+            color:white;
+            padding:20px 40px;
+            display:flex;
+            align-items:center;
+        }
+        .s1>div{
+            flex-basis:50%;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        .btn1{
+            background:green;
+            padding:7px;   
+        }
+        .btn2{
+            border: 1px solid green;
+            padding:7px;    
+            background:transparent;
+            color:white; 
+
+        }
+
+        .s2{
+             background:rgba(17, 15, 15, 0.866);
+            padding:20px 40px;
+            height:70vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .s2>h2{
+            background:green;
+            padding:10px 20px;
+        }
+
+        .s3{
+             background:rgba(18, 17, 17, 0.92);
+            padding:20px 40px;
+            color:white;
+        }
+        .s3>.container{
+            height:70vh;
+            display:flex;
+            gap:10px;
+            margin:10px;
+            align-items:center;
+        }
+        .container>div{
+            padding:20px;
+            text-align:center;
+            background:rgb(23, 20, 20);
+        }
+        .container>div>i{
+            color:green;
+            font-size:  2rem;
+        }
+        h5{
+            margin:10px;
+        }
+
+
+        .s4{
+            background:rgba(18, 17, 17, 0.92);
+            padding:20px 40px;
+            color:white;
+        }
+        .s4>.container{
+            display:flex;
+            gap:10px;
+            margin:20px;
+        }
+        .s4>.container>div{
+            padding:20px;
+        }
+          .container>div>p{
+            margin:10px;
+          }
+        
+        .s5{
+            background:rgba(18, 17, 17, 0.92);
+            padding:20px 40px;
+            color:white;
+        }
+        table{
+            width:100%;
+            margin:20px;
+        }
+        th{
+            background:green;
+        }
+        td,th{
+            padding:10px;
+        }
+
+    footer{
+            background:rgba(17, 15, 15, 0.866);
+            color:white;
+            padding:20px 40px;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>BT</span> Triveni</h1>
+        <ul>
+            <li>About</li>
+            <li>Achievement</li>
+            <li>Education   </li>
+            <li>Projects</li>
+            <li>Contacts</li>
+        </ul>
+    </header>
+  
+    <section class="s1">
+        <div>
+            <h1>Hi, I'm <span style="color:green;">Triveni</span> </h1>
+            <h3 style="padding:10px 2px ">I build simple and clean websites.</h3>
+            <p  style="padding:10px 2px ">I am a web development student who loves turning ideas into real, working web pages.</p>
+            <button class="btn1">view projects</button>
+            <button class="btn2">Download cv</button>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+        </div>
+    </section>
+
+    <section class="s2">
+        <h2>FUll Stack Dev</h2>
+    </section>
+
+    <section class="s3">
+        <h1>What I do</h1>
+        <div class="container">
+            <div>
+                <i class="  fa-solid fa-computer"></i>
+                <h5>Web Design</h5>
+                <p>Design clean and attractive websites that provide great user experience.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h5>Web Design</h5>
+                <p>Design clean and attractive websites that provide great user experience.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h5>Web Design</h5>
+                <p>Design clean and attractive websites that provide great user experience.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h5>Web Design</h5>
+                <p>Design clean and attractive websites that provide great user experience.</p>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="s4">
+        <h1>My Projects</h1>
+        <div class="container">
+            <div>
+                <div><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                <h3>Bank Loan Eligibility</h3>
+                <p>Built an interactive web form(HTML/CSS) where users can enter their details and get an instant eligibility result.</p>
+               <button class="btn1">view projects</button>
+            </div>
+
+             <div>
+                <div><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                <h3>AI Recipe Generation</h3>
+                <p>Built a nutrition analysis feature that automatically shows calories,proteins,carbs,fats,fiber,and sugar for recipes.</p>
+                <button class="btn1">view projects</button>
+
+            </div>
+
+             <div>
+                <div><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                <h3>Exam Stress AI - Mental Load Estimator</h3>
+                <p>Built an AI-powered tool to estimate mental load during exams.</p>
+                <button class="btn1">view projects</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="s5">
+        <h1>Education</h1>
+        <table border="1">
+            <tr>
+                <th>Qualificaton</th>
+                <th>Institution</th>
+                <th>year</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>intermediate</td>
+                <td>narayana</td>
+                <td>2020 - 2022</td>
+                <td>brundavan gardens</td>
+            </tr>
+            <tr>
+                <td>bachelor of computer science</td>
+                <td>VNITSW</td>
+                <td>2022 - 2026</td>
+                <td>palakaluru</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <div>© 2026 Triveni. All rights reserved.</div>
+        <div>  
+            <i class="  fa-solid fa-computer"></i>
+            <i class="  fa-solid fa-computer"></i>
+            <i class="  fa-solid fa-computer"></i>
+        </div>
+    </footer>
+
+
+</body>
+</html>
