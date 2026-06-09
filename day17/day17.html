@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        spread operator
+        destructuring
+
+
+        shallow copy
+        deep copy
+
+
+        
+        // shallow copy - copying the references instead of  copy of values
+        let a=['html',2,3]
+        let b=a
+        b[0]='react'
+        console.log(a)// react 2,3
+        console.log(b)//react 2,3
+
+        spread operators
+        it is used to spread the values of iterable objects
+        we can use in strings ,arrays and objects
+        we can achieve deep copy
+        it is denoted by ...
+
+        
+        let a=['html',2,3]
+        let b=[...a]
+        b[0]='react'
+        console.log(a)// html, 2,3
+        console.log(b)//react ,2,3
+        
+        let frontend=['html','css','react']
+        let backend=['python','flask']
+        console.log([...frontend,...backend,'mysqql'])
+
+        let obj1={name:'john'}
+        let obj2={age:'25'}
+        console.log({...obj1,...obj2})
+        
+        let str='hello'
+        console.log([...str])
+
+
+        destructuring
+        it is proceess of extracting values from an array and object
+        and assign to variables
+
+        let tech=[[['html','css'],['js','react']],[['python'],['django']]]
+        console.log(tech[1][1])
+
+        */ 
+        let tech=[[['html','css'],['js','react']],[['python'],['django']]]
+
+        let [[static,dynamic],[program,[framework]]]=tech
+        console.log(framework)  
+
+        let obj={
+            name:'john',
+            age:25,
+            address:{
+                city:{
+                    landmark:'rtc junc',
+                    cityname:'vizag'
+                }
+            }
+        }
+        let {name,age,address:{city:{landmark,cityname}}}=obj
+        console.log(cityname)
+
+    </script>
+</body>
+</html>

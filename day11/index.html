@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+        types of loops
+        1) for loop
+            for(initialization;condition;updation){
+            //block of code
+            }
+
+            for (i=1;i<=10;i++){
+            console.log(i)
+            }
+        2) while loop
+            
+           initialization
+
+           while(condition){
+           //block
+           updation
+           }
+
+           let i=1
+           while(i<=10){
+           console.log(i)
+           i++
+           }
+
+        3) for in loop
+        it is used to iterate the keys and index of an string,array and objects
+
+        let str='hello'
+        let arr=['html','css','js']
+        let obj={name:'john',age:25}
+        for (i in str){
+        console.log(i)//index
+        console.log(str[i])//values
+        }
+        
+        for (i in arr){
+        console.log(i)//index
+        console.log(arr[i])//index
+        }
+        for (i in obj){
+        console.log(i)//keys
+        console.log(obj[i])
+        }
+        4) for of loop
+        it is used to iterate the strings and arrays and will get values 
+  for (let i of str){
+            console.log(i)
+        }
+        for (let i of arr){
+            console.log(i)
+        }
+        
+        
+        
+                for (i = 1; i <= 10; i++) {
+                    console.log(i)
+                }
+        
+                let j = 1
+                while (j <= 10) {
+                    console.log(j)
+                    j++
+                }
+        
+                let str = 'hello'
+                let arr = ['html', 'css', 'js']
+                let obj = { name: 'john', age: 25 }
+                for (let i in str) {
+                    console.log(i)//index
+                    console.log(str[i])//values
+                }
+        
+                for (let i in arr) {
+                    console.log(i)//index
+                    console.log(arr[i])//index
+                }
+                for (let i in obj) {
+                    console.log(i)//keys
+                    console.log(obj[i])
+                }
+
+
+                while(true){
+                let inp=prompt('enter ur menu items')
+                if(inp=='done'){
+                break;
+                }
+                }
+
+                let pin='1234'
+                let c=0
+                while(true){
+                let inp=prompt('enter ur pin')
+                if(c==3){
+                    break;
+                    }
+                    c++
+                if(inp==pin){
+                console.log('welcome to the banking')
+                }
+
+                }
+                let str = 'hello'
+                let arr = ['html', 'css', 'js']
+        let obj = { name: 'john', age: 25 }
+        console.log('for of next')
+        for (let i of str) {
+            console.log(i)
+        }
+        for (let i of arr) {
+            console.log(i)
+        }
+
+        let pin = '1234'
+        let c = 0
+        while (true) {
+            let inp = prompt('enter ur pin')
+            if (c == 3) {
+                console.log('your card is blocked for next 24hours')
+                break;
+            }
+            c++
+            if (inp == pin) {
+                console.log('welcome to the banking')
+                break;
+            }
+        }
+
+        let data=[
+            {id:1243,productname:'milkpacket',status:'expired'},
+            {id:113,productname:'ghee',status:'not expired'},
+            {id:143,productname:'buttermilk',status:'expired'},
+            {id:173,productname:'cheese',status:'not expired'}
+        ]
+        for (let i of data){
+            if(i.status=='expired') continue
+            console.log(i)
+        }
+
+        functions
+        function is reusable block of code that is used to perform
+        a task when invokes it
+
+        functions are defined with function keyword followed by funname
+        follwed by () may include parameters followed by block of
+        code
+
+        //function defintion
+        function sum(a,b){
+        console.log(a+b)
+        }
+
+        //call
+        sum(1,2)
+        sum(3,4)
+
+
+        key points
+        1) function name stores function definition
+        console.log(sum)
+        2) logging of function calling will give you the return value
+               console.log(sum(1,2))//execution and return value
+        3) statements after return will not be executeed
+
+
+        
+        //function defintion
+        function sum(a,b){
+            console.log(a+b)
+            return 'hello'
+            console.log('hi')
+        }
+        console.log(sum)//definition
+        sum()//execution
+        console.log(sum(1,2))//execution and return value
+        
+
+        types of function
+        1) named function
+        2) annoynomous function
+        let sum=function(a,b){
+        console.log(a+b)
+        }
+
+        3) arrow function -concise way of writing a functin
+
+        let sum=(a,b)=>{
+        console.log(a+b)
+        }
+
+        closure
+        when an inner function rememeber the varaible defined in outer
+        fun and can able to change even after the execution of function
+        function outer(){
+            console.log('outer is executed')
+            let c=0
+            return function(){
+                console.log('inner is executed')
+                c++
+                console.log(c)
+            }
+        }
+        // console.log(outer)//definition
+        // outer()//execution
+        // console.log(outer()())//exeution out + retun inner func def
+        // outer()()//1
+        // outer()()//1
+       let a=outer()//outer
+       a()//inner 1
+       a()//iiner 2
+       a()//iiner 3
+       a()//iiner 4
+       a()//iiner 5
+       a()//iiner 6
+
+       scopes
+       life or accesibility of an variable
+
+       founder--global
+
+       trainer--block
+
+       student-- local 
+       */
+
+       let founder='sairam'
+       console.log(founder)//global- we can access from anywhere
+       {
+        let trainer='teja'
+        console.log(trainer)//block - we can access within block
+         console.log(founder)//global
+
+       }
+        // console.log(trainer)//we cannot acces outside of the blcok
+
+       function fun(){
+       let student='naga sai'
+       console.log(student)//local - we can access within a funciton
+       console.log(founder)//global
+
+       }
+       fun()
+       console.log(student)//local cannot access outside
+
+       </script>
+</body>
+
+</html>

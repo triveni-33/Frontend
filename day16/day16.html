@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <script>
+        /*
+          let const
+          arrow functions
+          localstorage
+          array methods-map filter reduce
+          destructuring
+          spread operator
+  
+  
+          variables
+          //declaration
+          var a
+  
+          //assignment
+          a=10
+  
+          //initialization
+          var a=10
+  
+          //hoisting
+          console.log(b)
+          var b=10
+  
+          var 
+          redeclartion is allowed
+          assignment is allowed
+        hoisting is possible
+  
+          let 
+          redeclaration is not allowed
+          let a=10;
+         let a=20;
+
+  
+         assignment is allowed
+          let a;
+           a=10;
+           a=20;
+
+        hoisting is not possible because it was in tempororal dead zone
+  
+          const
+          redeclaration is not allowed
+          const a=10;
+         const a=20;
+
+         assignment is not allowed 
+         const a;
+          a=10;
+          a=20;
+  
+        hoisting is not possible because it was in tempororal dead zone
+        console.log(a)
+        const a=10;
+
+
+        arrow functions
+        concise way of writing a function 
+
+        function sum(a,b){
+        return a+b}
+
+        arrow function syntax- it will add return automatically
+        let sum=(a,b)=>a+b
+        sum(1,2)
+
+        arrow function syntax- we can eliminate paranthesis if there is only one parameter
+        let sum=a=>a+a
+        sum(2)
+
+
+        
+        let data=10
+        localStorage.setItem('val',data)
+
+        let name='john'
+        localStorage.setItem('name',name)
+
+                           let onrstudents=[{
+                               name:'keerthana',
+                               age:22
+                           },{
+                            name:'raja',
+                               age:23
+                           }]
+        localStorage.setItem('onrstudents',JSON.stringify(onrstudents))
+    
+        
+
+        array methods
+        1) map
+        it is used to create a transformed array by applying a provided function
+        for every element in an array and return the transformed array
+
+
+        let arr=[1,2,3]
+        let newarr=arr.map((val,ind,ar)=>{
+        console.log('hello')
+        })
+
+
+        2) filter
+        it is uset to create a filtered array by applying boolean function for every 
+        element 
+
+
+        let arr=[1,2,3]
+        let newarr=arr.filter((val,ind,ar)=>{
+        return val%2==0
+        })
+
+        
+        let arr = ['html', 'css', 'js']
+        let newarr = arr.map((val, ind) => {
+            console.log(val)//values
+            console.log(ind)//inde
+            return "frontend tech->" + val
+        })
+        console.log(newarr)
+
+        let arr1 = [1, 2, 3, 4, 5, 6]
+        let newarr1 = arr1.filter((val, ind, ar) => {
+            return val % 2 == 0
+        })
+        console.log(newarr1)
+
+        let total = arr1.reduce((acc, val, ind, ar) => {
+            return acc * val
+        }, 1)
+        console.log(total)
+
+
+        */
+
+        let data=['html','css','js','bootstrap','react']
+
+        let parent=document.getElementById('container')
+        let output=data.map((val)=>{
+            parent.innerHTML+=`<h1>${val}</h1>`
+        })
+        </script>
+</body>
+
+</html>

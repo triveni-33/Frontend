@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    regex 
+    and form handling
+     -->
+    
+     <form action="" id="registerform">
+        <input type="text" id="username" placeholder="enter name">
+        <input type="text" id="age" placeholder="enter age">
+        <button type="submit">Submit</button>
+     </form>
+<script>
+    /*
+    form handling
+    input 
+    submit 
+    formm
+    */ 
+   let rf=document.getElementById('registerform')
+   rf.onsubmit=function (e){
+    e.preventDefault()
+    console.log(e.target[0]);//1st inp
+    console.log(e.target[1]);//2nd inp
+    console.log(e.target[0].value);//1st inp  val
+    console.log(e.target[1].value);//2nd inp val
+
+    let inp1=document.getElementById('username')
+    let inp2=document.getElementById('age')
+    console.log(inp1.value)
+    console.log(inp2.value)
+    
+   }
+
+/*
+regex
+regular expression
+we can match pattern
+
+
+
+*/    
+
+// let pattern=/hello/
+// let pattern=/[A-Z]+/
+// let pattern=/[A-Za-z0-9]+/
+// let pattern=/[0-9]{10}/
+// let text='93982'
+// console.log(text.match(pattern))
+
+let emailpattern=/[A-Za-z0-9._]+@[a-z]+\.[a-z]{3}/
+let usermail='teja@gmail.com'
+console.log(usermail.match(emailpattern))
+
+let passwordpattern=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&*]).{8}/
+let userpassword='TEja@234'
+console.log(userpassword.match(passwordpattern))
+
+   
+
+</script>
+
+</body>
+</html>

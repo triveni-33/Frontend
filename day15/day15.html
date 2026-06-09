@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /*
+        
+        synchronous
+        which executes line by line
+
+        asynchronous
+        which executes parallely
+        api calling
+        timing functions
+  console.log('one')
+
+            setTimeout(() => {
+                console.log('two')
+            }, 1000);
+
+        console.log('three')
+
+        ways to handle asynchronus code
+        1) callbacks
+        2) promises
+           it represent eventual completion or failure of an asynchronus
+           operation 
+
+           promise had two parts
+           1) promise creation
+             let prom=new Promise((res,rej)=>{
+             let data=10
+             if(data==10){
+             res('promise is fullfilled')
+             }else{
+             rej('promise is rejected')
+             }
+             })
+             
+
+           2) promise consumption
+             1) .then().catch()
+            prom.then((res)=>console.log(res))
+             .catch((err)=>console.log(err))
+
+             2) async await
+            async function checkprom(){
+                let a=await prom
+                console.log(a)
+             }
+             checkprom()
+
+
+             fetch -it is used to make network request to the server
+                   it is used to call an api
+
+                - fetch returns promise 
+                -we need to consume a promise
+
+
+
+        */ 
+
+        let prom=fetch('https://fakestoreapi.com/products')
+
+        prom.then((res)=>res.json())
+        .then((finalres)=>console.log(finalres))
+
+
+        async function getdata(){
+            let data=await fetch('https://fakestoreapi.com/products')
+            let finaldata=await data.json()
+            console.log(finaldata)
+        }
+        getdata()
+
+            
+
+
+    </script>
+
+</body>
+
+</html>
