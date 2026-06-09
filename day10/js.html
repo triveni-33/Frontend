@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+
+    html css bootstrap--- static pages
+
+    what is javascript
+    javascript is a programming language  that is used to creat 
+    dynamic nature to the webpages
+
+    addtocart
+    filter 
+    search
+    apicalls
+
+    how to integrate javascript
+    1) inline js
+    <button onclick='console.log("from inline")'>click me</button>
+
+    for output
+    ctrl shift j
+    or  right click---inspect ---console
+
+    2) internal
+    <script>
+        console.log('from internal')
+    </script>
+
+    3) external
+    create demo.js file
+    console.log('from external')
+
+    add above closing of body tag
+    <script src='demo.js'></script>
+
+
+   
+    -->
+    <!-- <button onclick="console.log('from inline')">click me</button>
+    <script src='demo.js'></script> -->
+
+    <script>
+        /*
+     variables 
+    variables are like containers used to store the data
+    and the data could be anything
+
+    variables are defined with var ,let or const keywords
+    followed by variable name 
+    
+    var a=10;
+    let b=20;
+    const c=30;
+    console.log(a,b,c)
+
+
+    variable terms
+    variable declaration
+    var a;
+
+    undefined-a variable without a value
+    console.log(a)
+ 
+    variable assignment 
+    var a;
+    a=10;
+    a=20;
+    
+    intialization
+    var a=10;
+
+    undeclared varaible -- not defined error
+    console.log(b)
+
+    hoisting- hoisting is a behaviour where the declaration of variable 
+    are moved to top even before the execution
+
+    console.log(a)//undefined
+    var a=10;
+
+    datatypes
+    a) primitive datatypes
+       which store single values
+       immutable
+
+       1) strings- collection of characters which are enclosed in single or double or ``
+       var str='hello world'
+        var str='hello world'
+       str[0]='z'
+       console.log(str)
+       console.log(str[0])
+
+       2) number
+       let num=10
+       let dig=10.3
+       let val=-10
+
+       3) boolean
+       true  false
+       isadmin=true;
+       ispaid=true;
+       ispremium=false;
+
+       4) undefined
+       var a;
+       console.log(a)
+
+       5) null
+       it repesentual the intensional absence of value
+       var a
+       console.log(a+1)
+
+        var a=null;
+       console.log(a+2)
+
+       console.log(typeof str)//stinng
+
+    b) non primitive datatypes
+    which stores multiple values
+    mutable
+
+    array
+    it is used to store the collection of data in a single varaible
+    let arr=[1,'hello',true,'js']
+    it is homogenenous and heterogenous 
+    it is mutable
+    it is having positive indexing
+    let arr=[1,'hello',true,'js']
+    
+    console.log(arr[1])
+    
+
+    object
+    it is used to store the data in key value pairs
+
+     let obj={
+            batchno:1,
+            id:12,
+            name:'raja',
+            age:25
+        }
+    console.log(obj)
+    console.log(obj.name)//dot knotation
+    console.log(obj['name'])//square bracked notaiton
+
+
+    functions
+    function sum(){
+    console.log(2+3);
+    }
+    sum()
+        
+    let arr = [1, 'hello', true, 'js']
+    console.log(arr[1])
+    let obj = {
+        batchno: 1,
+        id: 12,
+        name: 'raja',
+            age: 25
+        }
+        console.log(obj)
+        console.log(obj.name)//dot knotation
+        console.log(obj['age'])//square bracked notaiton
+
+        function sum() {
+            console.log(2 + 3);
+        }
+        sum()
+
+
+        condtional statements
+
+        if(cond){
+        //block of code}
+        else if(codn){
+        //code
+        }else{
+        //code
+        }
+        */
+     let marks=prompt('enter ur marks')
+     if(marks>75){
+        console.log('grade a')
+     }else if(marks>35){
+        console.log('grade b')
+     }
+     else{
+        console.log('fail')
+     }
+    </script>
+</body>
+
+</html>
